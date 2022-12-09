@@ -1,5 +1,5 @@
 {
-  "name": "express-ts-basic-template",
+  "name": "express-ts",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run build && node build/index.js",
