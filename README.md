@@ -1,8 +1,8 @@
 # Express Typescript Template
 
-- Typescript = v4.9.4
-- NodeJS = v18.12.1
-- PNPM = v9.12.0
+- Typescript = v5.6.3
+- NodeJS = v22.11.0
+- PNPM = v9.12.3
 
 ### Refrence
 
