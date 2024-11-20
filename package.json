@@ -9,12 +9,16 @@
     "build": "rimraf ./build && tsc",
     "dev": "nodemon",
     "lint": "eslint . --ext .ts",
-    "test:env": "rimraf ./build && dotenv -e .env.test -- pnpm dev",
+    "test:env": "rimraf ./build_test && dotenv -e .env.test -- pnpm dev",
     "test:run": "dotenv -e .env.test -- vitest run",
     "test": "concurrently --kill-others \"pnpm test:env\" \"wait-on http://localhost:3030 && pnpm test:run\"",
     "ncu": "ncu",
     "ncu:u": "ncu -u",
-    "ncu:i": "ncu -i"
+    "ncu:i": "ncu -i",
+    "build:swc": "rimraf ./build && swc src --out-dir build",
+    "start:swc": "node build/src/index.js",
+    "test:env:swc": "rimraf ./build_test && dotenv -e .env.test -- swc src --out-dir build_test && dotenv -e .env.test -- node build_test/src/index.js",
+    "test:swc": "concurrently --kill-others \"pnpm test:env:swc\" \"wait-on http://localhost:3030 && pnpm test:run\""
   },
   "engines": {
     "node": ">=22",
@@ -28,6 +32,8 @@
     "npm-check-updates": "^17.1.11"
   },
   "devDependencies": {
+    "@swc/cli": "^0.5.1",
+    "@swc/core": "^1.9.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.9",

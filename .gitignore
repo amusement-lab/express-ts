@@ -1,5 +1,6 @@
 .env
 .env.test
 build
+build_test
 node_modules
 tmp
