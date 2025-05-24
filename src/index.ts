@@ -18,5 +18,6 @@ app.use(morgan('dev'))
 app.use(router)
 
 app.listen(port, () => {
+  // eslint-disable-next-line
   console.log(`Server is running at http://localhost:${port}`)
 })
