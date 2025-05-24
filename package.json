@@ -1,6 +1,6 @@
 {
   "name": "express-ts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -22,37 +22,37 @@
   },
   "engines": {
     "node": ">=22",
-    "pnpm": ">=9"
+    "pnpm": ">=10"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "morgan": "^1.10.0",
-    "npm-check-updates": "^17.1.11"
+    "npm-check-updates": "^18.0.1"
   },
   "devDependencies": {
-    "@swc/cli": "^0.5.1",
-    "@swc/core": "^1.9.2",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "^1.11.29",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.15.21",
     "@types/superagent": "^8.1.9",
-    "@typescript-eslint/eslint-plugin": "^8.14.0",
-    "@typescript-eslint/parser": "^8.14.0",
-    "concurrently": "^9.1.0",
-    "dotenv-cli": "^7.4.2",
-    "eslint": "^9.14.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "nodemon": "^3.1.7",
-    "prettier": "^3.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "concurrently": "^9.1.2",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "superagent": "^10.1.1",
+    "superagent": "^10.2.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.4",
-    "wait-on": "^8.0.1"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4",
+    "wait-on": "^8.0.3"
   }
 }

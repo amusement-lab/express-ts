@@ -17,4 +17,16 @@ describe('Testing connection to API server', () => {
     expect(res.body.message).to.be.an('string')
     expect(res.body.message).to.equal('Express + TypeScript')
   })
+
+  it('GET /', async () => {
+    const res = await superagent.get(url + '/test')
+
+    expect(res.statusCode).to.equal(200)
+
+    expect(res.body).to.be.an('object')
+    expect(res.body).to.have.property('message')
+
+    expect(res.body.message).to.be.an('string')
+    expect(res.body.message).to.equal('Connection is stable')
+  })
 })
